@@ -1,5 +1,9 @@
 {
   "plugins": {
+    "cord.nvim": {
+      "rev": "2e6b16e0363f5a12483734ba96e6326ce2d6741e",
+      "src": "https://github.com/vyfor/cord.nvim"
+    },
     "gitsigns.nvim": {
       "rev": "25050e4ed39e628282831d4cbecb1850454ce915",
       "src": "https://github.com/lewis6991/gitsigns.nvim"
@@ -7,10 +11,6 @@
     "mason.nvim": {
       "rev": "16ba83bfc8a25f52bb545134f5bee082b195c460",
       "src": "https://github.com/mason-org/mason.nvim"
-    },
-    "neocord": {
-      "rev": "4cf99993826a1d555294a2f152804bcdce9be2e6",
-      "src": "https://github.com/IogaMaster/neocord"
     },
     "nvim": {
       "rev": "df2a1f9f3392d688397e945544a30aec8fc9b4c7",

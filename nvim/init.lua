@@ -12,7 +12,7 @@ vim.pack.add({
 	"https://github.com/catppuccin/nvim",
 	"https://github.com/tree-sitter/tree-sitter",
 	"https://github.com/wakatime/vim-wakatime",
-  "https://github.com/IogaMaster/neocord",
+    "https://github.com/vyfor/cord.nvim",
   "https://github.com/nvim-telescope/telescope.nvim",
   "https://github.com/nvim-lua/plenary.nvim",
   "https://github.com/mason-org/mason.nvim",
@@ -26,8 +26,7 @@ vim.keymap.set('i', '<c-space>', function()
 end)
 
 
-require("plugins.presence")
 require("plugins.telescope")
+require("plugins.presence")
 require("plugins.lsp")
 require("mason").setup()
-
