@@ -16,6 +16,7 @@ vim.pack.add({
   "https://github.com/nvim-telescope/telescope.nvim",
   "https://github.com/nvim-lua/plenary.nvim",
   "https://github.com/mason-org/mason.nvim",
+  "https://github.com/lewis6991/gitsigns.nvim",
  })
 
 vim.keymap.set('n', '<leader>e', vim.cmd.Ex, { desc = 'Open File Explorer' })
