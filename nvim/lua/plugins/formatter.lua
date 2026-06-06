@@ -7,9 +7,11 @@ conform.setup({
 		javascriptreact = { "prettier" },
 		typescript = { "prettier" },
 		typescriptreact = { "prettier" },
+		json = { "prettier" },
 		jsonc = { "prettier" },
 		lua = { "stylua" },
 		c = { "clang-format" },
+		python = { "pyproject-fmt" },
 	},
 
 	format_on_save = {
