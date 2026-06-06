@@ -1,5 +1,9 @@
 {
   "plugins": {
+    "autoclose.nvim": {
+      "rev": "bafd0368716216fa6a7bb2a43ecd889b44efdb46",
+      "src": "https://github.com/m4xshen/autoclose.nvim"
+    },
     "conform.nvim": {
       "rev": "619363c30309d29ffa631e67c8183f2a72caa373",
       "src": "https://github.com/stevearc/conform.nvim"
