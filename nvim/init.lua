@@ -19,7 +19,14 @@ vim.pack.add({
   "https://github.com/lewis6991/gitsigns.nvim",
  })
 
-vim.keymap.set('n', '<leader>e', vim.cmd.Ex, { desc = 'Open File Explorer' })
+vim.keymap.set('n', '<leader>e', function () 
+        if vim.bo.filetype == "netrw" then
+            vim.cmd("b#")
+        else
+            vim.cmd("Ex")
+        end
+    end , { desc = 'Open File Explorer' })
+
 vim.keymap.set("i", "jk", "<ESC>")
 vim.keymap.set('i', '<c-space>', function()
   vim.lsp.completion.get()
@@ -30,3 +37,4 @@ require("plugins.telescope")
 require("plugins.presence")
 require("plugins.lsp")
 require("mason").setup()
+
