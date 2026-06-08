@@ -10,7 +10,7 @@ vim.cmd.colorscheme("catppuccin")
 
 vim.pack.add({
 	"https://github.com/catppuccin/nvim",
-	"https://github.com/tree-sitter/tree-sitter",
+	"https://github.com/nvim-treesitter/nvim-treesitter",
 	"https://github.com/wakatime/vim-wakatime",
 	"https://github.com/vyfor/cord.nvim",
 	"https://github.com/nvim-telescope/telescope.nvim",
@@ -19,6 +19,7 @@ vim.pack.add({
 	"https://github.com/lewis6991/gitsigns.nvim",
 	"https://github.com/stevearc/conform.nvim",
 	"https://github.com/m4xshen/autoclose.nvim",
+	"https://github.com/windwp/nvim-ts-autotag",
 })
 
 vim.keymap.set("n", "<leader>e", function()
@@ -40,3 +41,5 @@ require("plugins.presence")
 require("plugins.lsp")
 require("plugins.formatter")
 require("plugins.autoclose")
+require("plugins.autotag")
+require("plugins.treesitter")
