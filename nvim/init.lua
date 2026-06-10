@@ -6,10 +6,8 @@ vim.o.shiftwidth = 2
 vim.o.expandtab = true
 vim.g.mapleader = " "
 
-vim.cmd.colorscheme("catppuccin")
-
 vim.pack.add({
-	"https://github.com/catppuccin/nvim",
+	"https://github.com/blazkowolf/gruber-darker.nvim",
 	"https://github.com/nvim-treesitter/nvim-treesitter",
 	"https://github.com/wakatime/vim-wakatime",
 	"https://github.com/vyfor/cord.nvim",
@@ -21,6 +19,8 @@ vim.pack.add({
 	"https://github.com/m4xshen/autoclose.nvim",
 	"https://github.com/windwp/nvim-ts-autotag",
 })
+
+vim.cmd.colorscheme("gruber-darker")
 
 vim.keymap.set("n", "<leader>e", function()
 	if vim.bo.filetype == "netrw" then
