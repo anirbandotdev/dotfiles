@@ -22,19 +22,7 @@ vim.pack.add({
 
 vim.cmd.colorscheme("gruber-darker")
 
-vim.keymap.set("n", "<leader>e", function()
-	if vim.bo.filetype == "netrw" then
-		vim.cmd("b#")
-	else
-		vim.cmd("Ex")
-	end
-end, { desc = "Open File Explorer" })
-
-vim.keymap.set("i", "jk", "<ESC>")
-vim.keymap.set("i", "<c-space>", function()
-	vim.lsp.completion.get()
-end)
-
+require("keymaps")
 require("mason").setup()
 require("plugins.telescope")
 require("plugins.presence")
