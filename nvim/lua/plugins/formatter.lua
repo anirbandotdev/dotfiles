@@ -12,6 +12,7 @@ conform.setup({
 		lua = { "stylua" },
 		c = { "clang-format" },
 		python = { "pyproject-fmt" },
+		asm = { "asmfmt" },
 	},
 
 	format_on_save = {

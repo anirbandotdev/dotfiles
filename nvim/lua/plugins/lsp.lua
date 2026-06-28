@@ -73,6 +73,11 @@ local lsps = {
 					end,
 				})
 			end,
+			root_dir = function(bufnr, on_dir)
+				if vim.fs.ext(vim.fn.bufname(bufnr)) ~= "txt" then
+					on_dir(vim.fn.getcwd())
+				end
+			end,
 		},
 	},
 	{
@@ -93,6 +98,15 @@ local lsps = {
 					end,
 				})
 			end,
+		},
+	},
+	{
+		"asm-lsp",
+		{
+			cmd = {
+				"asm-lsp",
+			},
+			filetypes = { "asm" },
 		},
 	},
 }
