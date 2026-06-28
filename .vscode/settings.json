@@ -1,0 +1,32 @@
+{
+    "files.autoSave": "afterDelay",
+    "workbench.colorTheme": "Tsoding Emacs Gruber Darkest",
+    "workbench.productIconTheme": "fluent-icons",
+    "editor.fontWeight": "bold",
+    "workbench.iconTheme": "catppuccin-macchiato",
+    "makefile.configureOnOpen": true,
+    "files.associations": {
+        "*.asm": "asm"
+    },
+    "js/ts.updateImportsOnFileMove.enabled": "always",
+    "editor.wordWrap": "on",
+    "editor.linkedEditing": true,
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.fontFamily": "JetBrainsMono Nerd Font",
+    "[github-actions-workflow]": {
+        "editor.defaultFormatter": "redhat.vscode-yaml"
+    },
+    "github.copilot.nextEditSuggestions.enabled": true,
+    "chat.viewSessions.orientation": "stacked",
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[yaml]": {
+        "editor.defaultFormatter": "redhat.vscode-yaml"
+    }
+}
