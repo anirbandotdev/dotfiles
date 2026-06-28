@@ -1,0 +1,7 @@
+[user]
+	name = anirbandotdev
+	email = anirbaniitian@gmail.com
+[code]
+	editor = nvim
+[core]
+	editor = code --wait
