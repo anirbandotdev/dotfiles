@@ -18,6 +18,7 @@ vim.pack.add({
 	"https://github.com/stevearc/conform.nvim",
 	"https://github.com/m4xshen/autoclose.nvim",
 	"https://github.com/windwp/nvim-ts-autotag",
+	"https://github.com/xiyaowong/transparent.nvim",
 })
 
 vim.cmd.colorscheme("gruber-darker")
@@ -31,3 +32,4 @@ require("plugins.formatter")
 require("plugins.autoclose")
 require("plugins.autotag")
 require("plugins.treesitter")
+require("plugins.transparent")
