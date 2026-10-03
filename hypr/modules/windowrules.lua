@@ -55,3 +55,29 @@ hl.window_rule({
 	float = true,
 	center = true,
 })
+
+hl.window_rule({
+	name = "waypaper-float",
+	match = {
+		class = "waypaper",
+	},
+	float = true,
+	center = true,
+})
+
+hl.window_rule({
+	name = "hide-discord-dm",
+	match = {
+		class = "^(discord)$",
+		title = "^@.* - Discord$",
+	},
+	no_screen_share = true,
+})
+
+hl.window_rule({
+	name = "hide-whatsapp",
+	match = {
+		title = "(?i).*whatsapp.*",
+	},
+	no_screen_share = true,
+})
