@@ -19,9 +19,23 @@ vim.pack.add({
 	"https://github.com/m4xshen/autoclose.nvim",
 	"https://github.com/windwp/nvim-ts-autotag",
 	"https://github.com/xiyaowong/transparent.nvim",
+	"https://github.com/catppuccin/nvim",
 })
 
-vim.cmd.colorscheme("gruber-darker")
+vim.pack.add({
+	{
+		src = "https://github.com/nvim-neo-tree/neo-tree.nvim",
+		version = vim.version.range("3"),
+	},
+	-- dependencies
+	"https://github.com/nvim-lua/plenary.nvim",
+	"https://github.com/MunifTanjim/nui.nvim",
+	-- optional, but recommended
+	"https://github.com/nvim-tree/nvim-web-devicons",
+})
+
+-- vim.cmd.colorscheme("gruber-darker")
+vim.cmd.colorscheme("catppuccin-nvim")
 
 require("keymaps")
 require("mason").setup()
